@@ -1,0 +1,174 @@
+#include "stdafx.h"
+#include "iostream"
+#include <math.h>
+
+using namespace std;
+
+int main() {
+
+	double a, b, n, m, N;
+	a = 4.8; b = -7.9;
+	N = a - b;
+	cout << "a = " << a << endl;
+	cout << "b = " << b << endl;
+
+	if (a >= b)
+	{
+		n = pow(N, 1. / 3);
+	}
+	else if (a<b)
+	{
+		n = pow(a, 2) + (N / sinl(a*b));
+	}
+	if (n<b)
+	{
+		m = ((n - a) / (-b)) + pow((pow((sinl(a)), 2) - cosl(n)), 1. / 2);
+	}
+	else if (n == b)
+	{
+		m = pow(b, 2) + tan(n*a);
+	}
+	else if (n>b)
+	{
+		m = pow(b, 3) + n*pow(a, 2);
+	}
+	cout << "n = " << n << endl;
+	cout << "m = " << m << endl;
+
+	system("pause");
+	return 0;
+}
+
+
+_________________________________________________________________________________________________________________________
+
+
+#include "stdafx.h"
+#include "iostream"
+#include <math.h>
+
+using namespace std;
+int main()
+{
+	double a, b, z, t;
+	a = -0.6; b = 5.3;
+	cout << "a = " << a << endl;
+	cout << "b = " << b << endl;
+
+	if (a<b)
+	{
+		z = pow(sqrt(pow((pow(a, 2) - pow(b, 2)), 2)), 1. / 2);
+	}
+	else if (a >= b)
+	{
+		z = 1 - 2 * cosl(a)*sinl(b);
+	}
+	if (z<b)
+	{
+		t = pow((z + pow(a, 2)*b), 1. / 3);
+	}
+	else if (z == b)
+	{
+		t = 1 - log10(z) + cosl(pow(a, 2)*b);
+	}
+	else if (z>b)
+	{
+		t = 1 / cosl(z*a);
+	}
+
+	cout << "z = " << z << endl;
+	cout << "t = " << t << endl;
+
+	system("pause");
+	return 0;
+}
+
+
+__________________________________________________________________________________________________________________________________
+
+
+#include "stdafx.h" 
+#include "iostream" 
+#include <math.h> 
+using namespace std;
+
+int main()
+{
+	double a, b, y, t;
+	a = 4.6; b = 1.5;
+	cout << "a=" << a << endl;
+	cout << "b=" << b << endl;
+
+	if (a <= b)
+	{
+		y = ((a - b) / (a + b)) * (a + b) / (pow(a, 2) - a*b + pow(b, 2));
+
+	}
+	else if (a>b)
+	{
+		y = a + log(pow(b, 2));
+	}
+	if (y == b)
+	{
+		t = (2 * y + sqrt(pow(y, 2) - a)) / (2 * b - sqrt(pow(a, 2) - y));
+	}
+	else if (y < b)
+	{
+		t = sinl(y)*sinl(y) + (1 / (tan(a - b)));
+	}
+	else if (y>b)
+	{
+		t = pow(y*sinl(a), 1 / 3) + (1 / sqrt(y*cosl(b)));
+
+	}
+	cout << "y=" << y << endl;
+	cout << "t=" << t << endl;
+
+	system("pause");
+	return 0;
+  }
+  
+  
+ ______________________________________________________________________________________________________________________________ 
+  
+  
+#include "stdafx.h" 
+#include "iostream" 
+#include <math.h> 
+using namespace std;
+int main()
+{
+	double a, x, y, t;
+	a = 3.5; x = -0.7;
+	cout << "a=" << a << endl;
+	cout << "x=" << x << endl;
+
+	if (a <= x)
+	{
+		y = a + log(x + a);
+	}
+	else
+	{
+		y = pow(abs(sin(a*x)), 1 / 2);
+	}
+	if (a > y)
+	{
+		t = y / (a - x);
+	}
+	else if (a == y)
+	{
+		t = y / (a - x) + (a + x) / y / y;
+	}
+	else if (a < y)
+	{
+		t = tan(a*x) + cos(2 * a*y);
+	}
+
+	cout << "y=" << y << endl;
+	cout << "t=" << t << endl;
+
+	system("pause");
+	return 0;
+}
+
+
